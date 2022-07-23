@@ -1,2 +1,2 @@
 # Quizz-App
-#### [https://mostafaos21.github.io/Quizz-App/](Live Demo >>)
+#### [Live Demo >>](https://mostafaos21.github.io/Quizz-App/)
