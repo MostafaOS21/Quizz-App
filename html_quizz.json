@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What does (HTML) stand for?",
+    "choice_1": "Home Tool Markup Language",
+    "choice_2": "Hyper Text Markup Language",
+    "choice_3": "Hyperlinks and Text Markup Language",
+    "choice_4": "Hyberman and Text Markup Language",
+    "right_answer": "Hyper Text Markup Language"
+  },
+  {
+    "question": "Choose the correct HTML element for the largest heading:",
+    "choice_1": "<h1>",
+    "choice_2": "<h6>",
+    "choice_3": "<heading>",
+    "choice_4": "<h8>",
+    "right_answer": "<h1>"
+  },
+  {
+    "question": "What is the correct HTML element for inserting a line break?",
+    "choice_1": "<b>",
+    "choice_2": "<br>",
+    "choice_3": "<hr>",
+    "choice_4": "<strong>",
+    "right_answer": "<br>"
+  },
+  {
+    "question": "What does this tag do (<ul>)?",
+    "choice_1": "Making an order list",
+    "choice_2": "Making a paragraph",
+    "choice_3": "Making an unorder list",
+    "choice_4": "None of mentioned",
+    "right_answer": "Making an unorder list"
+  },
+  {
+    "question": "What is the meaning of (<meta>)?",
+    "choice_1": "Meta verse",
+    "choice_2": "Data upon data",
+    "choice_3": "Title the Page",
+    "choice_4": "None of mentioned",
+    "right_answer": "Data upon data"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "question": "JavaScript Is a ...",
+    "choice_1": "Single-threaded Language",
+    "choice_2": "Multi-threaded Language",
+    "choice_3": "Framework",
+    "choice_4": "None of mentioned",
+    "right_answer": "Single-threaded Language"
+  },
+  {
+    "question": "(do while) loop excuting its body at least:",
+    "choice_1": "3 times",
+    "choice_2": "2 times",
+    "choice_3": "Don't Excute",
+    "choice_4": "1 time",
+    "right_answer": "1 time"
+  },
+  {
+    "question": "How to find the largest number of (x) and (y)?",
+    "choice_1": "min(x,y)",
+    "choice_2": "Math.maximum(x,y)",
+    "choice_3": "Math.max(x,y)",
+    "choice_4": "Math.min(x,y)",
+    "right_answer": "Math.max(x,y)"
+  }, {
+    "question": "(DOM) stands for:",
+    "choice_1": "Documnet order model",
+    "choice_2": "Descripe object model",
+    "choice_3": "Define object model",
+    "choice_4": "Documnet object model",
+    "right_answer": "Documnet object model"
+  },
+  {
+    "question": "5 == '5':",
+    "choice_1": "true",
+    "choice_2": "false",
+    "choice_3": "null",
+    "choice_4": "(Error Occurs)",
+    "right_answer": "true"
+  },
+  {
+    "question": "JavaScript using ... to trace code",
+    "choice_1": "full-stack",
+    "choice_2": "another stack",
+    "choice_3": "call stack",
+    "choice_4": "merge stack",
+    "right_answer": "call stack"
+  },
+  {
+    "question": "BOM stands for:",
+    "choice_1": "Behaviour object model",
+    "choice_2": "Browser organize model",
+    "choice_3": "Browser object model",
+    "choice_4": "Browser object maze",
+    "right_answer": "Browser object model"
+  }
+]

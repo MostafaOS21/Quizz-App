@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeeeee;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.choosing-quizz,
+.ending {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: 20000;
+  background-color: #e91e63;
+  display: flex;
+  /* display: none; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.choosing-quizz .js-quizz,
+.html-quizz,
+.ending .repeat {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+}
+
+.choosing-quizz .js-quizz .btn,
+.choosing-quizz .html-quizz .btn,
+.ending .btn {
+  text-align: center;
+  padding: 8px 12px;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.choosing-quizz .js-quizz .btn {
+  background-color: #ffeb3b;
+}
+.choosing-quizz .html-quizz .btn {
+  background-color: #ff9800;
+}
+
+.ending > div .btn {
+  background-color: #607d8b;
+}
+
+.choosing-quizz .js-quizz:hover .btn,
+.html-quizz:hover .btn,
+.ending > div:hover .btn {
+  transform: translate(-8px, -8px);
+}
+
+.choosing-quizz span,
+.ending span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 2px solid;
+  z-index: -1;
+}
+
+/* Number Of Questions */
+
+.stats {
+  margin: 0 auto 20px;
+  width: 680px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .stats {
+    width: 360px;
+  }
+}
+
+.number-of-questions,
+.fails,
+.success {
+  padding: 5px 15px;
+  background-color: #00bcd4;
+  border-radius: 5px;
+}
+
+.fails {
+  background-color: #f32e1f;
+}
+
+.success {
+  background-color: #01a091;
+}
+
+/* Quizz */
+
+.quizz {
+  margin: auto;
+  width: 700px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 3px 11px #b7b7b794;
+  padding-bottom: 1px;
+}
+
+@media (max-width: 767px) {
+  .quizz {
+    width: 380px;
+  }
+}
+
+/* Timer */
+
+.quizz .timer {
+  text-align: center;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+/* Question And Answers */
+
+.quizz .ques {
+  padding: 10px;
+  border: 2px solid rgb(119 119 119 / 11%);
+  font-weight: 500;
+  text-align: center;
+  margin: 20px 10px;
+}
+
+.quizz .ans {
+  padding: 18px 0 18px 60px;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quizz .ans.active {
+  color: #03a9f4;
+  font-weight: 500;
+}
+
+.quizz .ans:hover {
+  background-color: #f1f1f1;
+}
+
+.quizz .ans:not(:last-child) {
+  border-bottom: 1px solid #b3b3b324;
+  margin-bottom: 10px;
+}
+
+.quizz .ans::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  top: 50%;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  border: 3px solid #dcdcdc;
+}
+
+.quizz .ans.active::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  left: 24px;
+  top: 50%;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background-color: #03a9f4;
+}
+
+/* Done Button */
+
+#done {
+  cursor: pointer;
+  background-color: #009688;
+  font-size: 19px;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  width: fit-content;
+  margin: auto;
+  margin: 20px;
+  margin-left: auto;
+}
+
+#done.clicked {
+  background-color: #00968899;
+}
+
+/* Questions List */
+
+ul {
+  list-style: none;
+  width: 680px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 767px) {
+  .questions-list {
+    width: 380px;
+  }
+}
+
+.questions-list li {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #bdbdbd;
+}
+
+.questions-list li.curr-ans {
+  border: 3px solid black;
+}
+
+.questions-list li.right-ans {
+  background-color: #01a091;
+}
+
+.questions-list li.wrong-ans {
+  background-color: #f32e1f;
+}
