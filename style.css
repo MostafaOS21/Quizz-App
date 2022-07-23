@@ -151,12 +151,26 @@ body {
   margin: 20px 10px;
 }
 
+@media (max-width: 767px) {
+  .quizz .ques {
+    margin: 10px;
+    font-size: 17px;
+  }
+}
+
 .quizz .ans {
   padding: 18px 0 18px 60px;
   font-size: 18px;
   position: relative;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+
+@media (max-width: 767px) {
+  .quizz .ans {
+    font-size: 14px;
+    padding: 14px 0 14px 55px;
+  }
 }
 
 .quizz .ans.active {
