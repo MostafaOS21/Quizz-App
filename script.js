@@ -192,7 +192,7 @@ function endingScreen(rightAns, all) {
   div.classList.add("ending");
   let header = document.createElement("h3");
   let precentage = document.createElement("h2");
-  let precentText = document.createTextNode(`${(rightAns / all) * 100}%`);
+  let precentText = document.createTextNode(`${parseInt((rightAns / all) * 100)}%`);
   precentage.appendChild(precentText);
   div.appendChild(precentage);
   if ((rightAns / all) * 100 > 80) {
